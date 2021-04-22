@@ -1,0 +1,33 @@
+body {
+    height: 100%;
+}
+
+#main-div {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 2px solid grey;
+
+}
+
+#header-div {
+    text-align: center;
+
+    height: 10vh;
+    border: 2px solid black;
+}
+
+#side-div {
+    text-align: center;
+
+    width: 10vh;
+    border: 2px solid red;
+}
+
+#content-div {
+    text-align: center;
+    width: 180vh;
+    height: 100%;
+    border: 2px solid blue;
+}
