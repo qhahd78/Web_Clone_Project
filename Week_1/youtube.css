@@ -16,6 +16,7 @@ body {
 #main-div {
     /* 높이 설정 */
     height: 100%;
+    width: 100%;
 
     /* flex 설정 */
     display: flex;
@@ -23,7 +24,7 @@ body {
     justify-content: center;
 
     /* 박스 테두리 설정  */
-    border: 2px solid grey;
+    /* border: 2px solid grey; */
 
 }
 
@@ -34,14 +35,15 @@ body {
 
     /* 높이 설정 */
     height: 10vh;
-
+    padding: 0 20px;
+    background-color: hsl(0, 0%, 18.82%);
     /* flex 설정 */
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     /* 박스 테두리 설정 */
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
     /* background-color: yellow; */
 }
 
@@ -51,39 +53,83 @@ body {
     /* justify-content: space-around; */
 }
 
-#header-div:nth-child(3) {
-    /* width: 600px; */
+#header-div div:nth-child(1) {
     display: flex;
-    /* justify-content: space-around; */
+    justify-content: space-between;
+    width: 140px;
+
+}
+
+#header-div div:nth-child(3) {
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
 }
 
 #header-div input {
+    background-color: black;
+    border: 1px solid grey;
     width: 500px;
     height: 30px;
 }
 
 #side-div {
-    /* 글씨 가운데 정렬 */
-    text-align: center;
-    /* font-size: 50px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
 
+    /* 글씨 가운데 정렬 */
+    /* text-align: center; */
+    /* font-size: 50px; */
+    background-color: hsl(0, 0%, 18.82%);
 
     /* 높이 설정 */
     height: 100%;
 
     /* 너비 설정 */
-    width: 30vh;
+    width: 18.7vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
 
     /* 박스 테두리 설정 */
-    border: 2px solid green;
+    /* border: 2px solid green; */
     /* background-color: green; */
 
-    margin-right: 2px;
+    /* margin-right: 2px; */
+}
+
+#side-div ul {
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    display: block;
+}
+
+#side-div ul li {
+    display: flex;
+    /* text-align: left; */
+    width: 240px;
+    height: 50px;
+    align-items: center;
+    /* justify-content: space-between; */
+    /* justify-content: center; */
+    /* text-align: left; */
+
+}
+
+#side-div ul li span {
+    display: inline-block;
+    font-size: 0.8rem;
+    padding-left: 25px;
+    /* text-align: left; */
 }
 
 #content-div {
+    padding-top: 8px;
+    background-color: #181818;
     /* 글씨 가운데 정렬 */
-    text-align: center;
+    /* text-align: left; */
     /* font-size: 50px; */
 
 
@@ -91,22 +137,48 @@ body {
     height: 100%;
 
     /* 너비 설정 */
-    width: 163vh;
+    width: 80vw;
 
     /* flex 설정 */
     display: flex;
+    /* felx; */
     flex-flow: row wrap;
-    /* align-items: center; */
+    align-items: flex-start;
     justify-content: space-around;
 
 
     /* 박스 테두리 설정 */
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     /* background-color: rgb(68, 68, 247); */
 }
 
-#content-div div {
-    height: 150px;
-    width: 240px;
-    border: 1px solid black;
+.writer-descript {
+    /* margin-top: 10px; */
+    width: 312px;
+    display: flex;
+    justify-content: space-between;
 }
+
+.writer-descript div p {
+    text-align: left;
+    font-size: 0.8rem;
+}
+
+.writer-descript div p:nth-child(2) {
+    color: #AAAAAA;
+
+}
+
+.writer-descript div p:nth-child(3) {
+    color: #AAAAAA;
+
+}
+
+/* #content-div div {
+    width: 312px;
+    height: 200px;
+} */
+
+/* #content-div div:hover {
+    cursor: pointer;
+} */
